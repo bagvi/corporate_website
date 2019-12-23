@@ -1,0 +1,417 @@
+/* Страница 404 */
+
+@font-face {
+    font-family: 'Marmelad';
+    src: url('../fonts/marmelad/marmelad-regular-webfont.woff2') format('woff2'),
+        url('../fonts/marmelad/marmelad-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Marmelad', 'Comic Sans MS', sans-serif;
+    text-align: center;
+}
+
+#notfound {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(341deg, #f93c12, #d9f308, #57db0e, #1588f9, #f915f0, #00ffd4, #ffa000);
+    background-size: 1400% 1400%;
+    -webkit-animation: backfone 30s ease infinite;
+    animation: backfone 30s ease infinite;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.notfound {
+    width: 100%;
+    line-height: 1.4;
+    text-align: center
+}
+
+.notfound .notfound-404 {
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+    z-index: -1
+}
+
+.notfound .notfound-404 h1 {
+    -webkit-animation: neon 30s ease-in-out infinite alternate, move404 5s ease;
+    animation: neon 30s ease-in-out infinite alternate, move404 5s ease;
+    font-family: 'Marmelad', 'Comic Sans MS', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: -35%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 224px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -12px;
+    color: #c0c0c3;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #8400ff, 1px 1px 0 #ff005a;
+    letter-spacing: -20px
+}
+
+.notfound .notfound-404 h2 {
+    font-family: 'Marmelad', 'Comic Sans MS', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26%;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 #8400ff;
+    letter-spacing: 13px;
+    margin: 0
+}
+
+.notfound a {
+    font-family: 'Marmelad', 'Comic Sans MS', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #00005a;
+    text-decoration: none;
+    border: 2px solid;
+    background: 0 0;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: .2s all;
+    transition: .2s all
+}
+
+.notfound a:hover {
+    color: #8400ff
+}
+
+@media only screen and (max-width:767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 24px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .notfound .notfound-404 h1 {
+        font-size: 182px
+    }
+}
+
+@-webkit-keyframes backfone {
+    0% {
+        background-position: 22% 0%
+    }
+
+    50% {
+        background-position: 79% 100%
+    }
+
+    100% {
+        background-position: 22% 0%
+    }
+}
+
+@keyframes backfone {
+    0% {
+        background-position: 22% 0%
+    }
+
+    50% {
+        background-position: 79% 100%
+    }
+
+    100% {
+        background-position: 22% 0%
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FF1177,
+            0 0 35px #FF1177,
+            0 0 40px #FF1177,
+            0 0 50px #FF1177,
+            0 0 75px #FF1177;
+    }
+
+    20% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #228DFF,
+            0 0 35px #228DFF,
+            0 0 40px #228DFF,
+            0 0 50px #228DFF,
+            0 0 75px #228DFF;
+    }
+
+    40% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FFDD1B,
+            0 0 35px #FFDD1B,
+            0 0 40px #FFDD1B,
+            0 0 50px #FFDD1B,
+            0 0 75px #FFDD1B;
+    }
+
+    60% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #B6FF00,
+            0 0 35px #B6FF00,
+            0 0 40px #B6FF00,
+            0 0 50px #B6FF00,
+            0 0 75px #B6FF00;
+    }
+
+    80% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FF9900,
+            0 0 35px #FF9900,
+            0 0 40px #FF9900,
+            0 0 50px #FF9900,
+            0 0 75px #FF9900;
+    }
+
+    to {
+        text-shadow: 0 2px 10px #8400ff,
+            0 2px 20px #8400ff,
+            0 2px 30px #8400ff,
+            0 0 40px #ff00de,
+            0 0 70px #ff00de,
+            0 0 80px #ff00de,
+            0 0 100px #ff00de,
+            0 0 150px #ff00de;
+    }
+}
+
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FF1177,
+            0 0 35px #FF1177,
+            0 0 40px #FF1177,
+            0 0 50px #FF1177,
+            0 0 75px #FF1177;
+    }
+
+    20% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #228DFF,
+            0 0 35px #228DFF,
+            0 0 40px #228DFF,
+            0 0 50px #228DFF,
+            0 0 75px #228DFF;
+    }
+
+    40% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FFDD1B,
+            0 0 35px #FFDD1B,
+            0 0 40px #FFDD1B,
+            0 0 50px #FFDD1B,
+            0 0 75px #FFDD1B;
+    }
+
+    60% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #B6FF00,
+            0 0 35px #B6FF00,
+            0 0 40px #B6FF00,
+            0 0 50px #B6FF00,
+            0 0 75px #B6FF00;
+    }
+
+    80% {
+        text-shadow: 0 2px 5px #8400ff,
+            0 2px 10px #8400ff,
+            0 2px 15px #8400ff,
+            0 0 20px #FF9900,
+            0 0 35px #FF9900,
+            0 0 40px #FF9900,
+            0 0 50px #FF9900,
+            0 0 75px #FF9900;
+    }
+
+    to {
+        text-shadow: 0 2px 10px #8400ff,
+            0 2px 20px #8400ff,
+            0 2px 30px #8400ff,
+            0 0 40px #ff00de,
+            0 0 70px #ff00de,
+            0 0 80px #ff00de,
+            0 0 100px #ff00de,
+            0 0 150px #ff00de;
+    }
+}
+
+@keyframes move404 {
+    from {
+        top: -250%;
+    }
+
+    to {
+        top: -35%;
+
+    }
+}
+
+@-webkit-keyframes move404 {
+    from {
+        top: 25%;
+    }
+
+    25% {
+        top: 150%
+    }
+
+    50% {
+        top: -50%
+    }
+
+    to {
+        top: 50%;
+    }
+
+}
+
+
+/* Страница 403 */
+
+
+body h1 {
+    font-size: 50px;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 200px;
+    color: #000;
+}
+
+body #picture,
+body #layer1,
+body #layer2,
+    {
+    background-size: 200%;
+    background-position: 0 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+body #picture {
+    background-image: url(../img/wrong_road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+
+}
+
+body #layer1 {
+    background: repeating-linear-gradient(90deg, rgba(236, 240, 241, 0), rgba(236, 240, 241, 0.6), rgba(236, 240, 241, 0));
+    -webkit-animation: layer1 5s linear infinite alternate;
+    animation: layer1 5s linear infinite alternate;
+}
+
+body #layer2 {
+    background: repeating-linear-gradient(90deg, rgba(236, 240, 241, 0), rgba(236, 240, 241, 0.6), rgba(236, 240, 241, 0));
+    -webkit-animation: layer2 10s linear infinite alternate;
+    animation: layer2 10s linear infinite alternate;
+}
+
+@-webkit-keyframes layer1 {
+    0% {
+        background-position: 1000px 0;
+    }
+
+    50% {
+        background-position: 500px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes layer1 {
+    0% {
+        background-position: 1000px 0;
+    }
+
+    50% {
+        background-position: 500px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@-webkit-keyframes layer2 {
+    0% {
+        background-position: 0 0%;
+    }
+
+    50% {
+        background-position: 500px 0%;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes layer2 {
+    0% {
+        background-position: 0 0%;
+    }
+
+    50% {
+        background-position: 500px 0%;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
